@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Berlin Energy Pvt. Ltd.</title>
+    <meta content="" name="description abut_us" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/berlin.png" rel="icon" />
+    <link href="assets/img/berlin.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/berlin.png" alt="" />
+          <!-- <h1>Berlin Energy Pvt. Ltd.</h1> -->
+        </a>
+
+        <!-- Nav Menu -->
+        <nav id="navmenu" class="navmenu d-flex justify-content-center">
+          <ul class="nav-ul">
+            <li>
+              <a class="nav-a" href="index.html#hero" class="active">Home</a>
+            </li>
+            <li><a class="nav-a" href="index.html#about">About</a></li>
+            <li><a class="nav-a" href="services-details.html">Services</a></li>
+            <li><a class="nav-a" href="product.html">Product</a></li>
+            <li><a class="nav-a" href="index.html#contact">Contact</a></li>
+          </ul>
+
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+        <!-- End Nav Menu -->
+      </div>
+    </header>
+    <section
+      class="mt-5 page-title-br"
+      style="background-image: url(./assets/img/bg-5.jpg)"
+    >
+      <div class="auto-container">
+        <div
+          class="content-box"
+          style="--bs-breadcrumb-divider: '>'"
+          aria-label="breadcrumb"
+        >
+          <div class="content-wrapper">
+            <div class="title">
+              <h2 style="color: white">Product</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="row" style="background-color: aliceblue">
+      <ol
+        class="breadcrumb bread-crumb"
+        style="justify-content: center; margin-top: 17px"
+      >
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Product</li>
+      </ol>
+    </div>
+
+
+    
+    <section>
+     
+      <div class="container">
+        <style>
+          table, th, td {
+             border: 1px solid black;
+             border-collapse: collapse; 
+          }
+          td, th {
+             padding: 10px;
+          }
+       </style>
+     
+        <div class="accordion accordion-flush" id="brln-services">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="battery-manufacturing">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                id="btn" onclick="battery_packs_for_solar_applications ()"
+                data-bs-toggle="collapse"
+                data-bs-target="#battery-manufacturing-coll"
+                aria-expanded="false"
+                aria-controls="battery-manufacturing-coll"
+              >
+              Battery Packs For Solar Applications
+              </button>
+            </h2>
+
+            <div
+              id="battery-manufacturing-coll"
+              class="accordion-collapse collapse"
+              aria-labelledby="battery-manufacturing"
+              data-bs-parent="#brln-services"
+            >
+              <div class="accordion-body" id="data_battery_packs_for_solar_applications_container">
+                <!-- <img src="assets/img/btr-manufacturing-1.png" alt="" class="recycling-and-environmental-services"> -->
+
+                <script>
+                
+                  // Function to convert JSON data to HTML table
+                  function battery_packs_for_solar_applications() {
+                     
+                  
+
+                     const data_battery_packs_for_solar_applications = [
+                      {
+                        'chemistry':'Li-Ion NMC',
+                        'Voltage':'from 11.1 V to As per Requirement ',
+                        'capcacity':'From 13 AH to As per Requirement '
+                      },
+                      {
+                        'chemistry':'Li-FePo4',
+                        'Voltage':'from 12.8 V to As per Requirement ',
+                        'capcacity':'From 12 AH to As per Requirement '
+                      }
+                      ];
+                     
+                     // Get the container element where the table will be inserted
+                     let container = document.getElementById("data_battery_packs_for_solar_applications_container");
+                     
+                     // Create the table element
+                     let table = document.createElement("table");
+                     
+                     // Get the keys (column names) of the first object in the JSON data
+                     let cols = Object.keys(data_battery_packs_for_solar_applications[0]);
+                     
+                     // Create the header element
+                     let thead = document.createElement("thead");
+                     let tr = document.createElement("tr");
+                     
+                     // Loop through the column names and create header cells
+                     cols.forEach((item) => {
+                        let th = document.createElement("th");
+                        th.innerText = item; // Set the column name as the text of the header cell
+                        tr.appendChild(th); // Append the header cell to the header row
+                     });
+                     thead.appendChild(tr); // Append the header row to the header
+                     table.append(tr) // Append the header to the table
+                     
+                     // Loop through the JSON data and create table rows
+                     data_battery_packs_for_solar_applications.forEach((item) => {
+                        let tr = document.createElement("tr");
+                        
+                        // Get the values of the current object in the JSON data
+                        let vals = Object.values(item);
+                        
+                        // Loop through the values and create table cells
+                        vals.forEach((elem) => {
+                           let td = document.createElement("td");
+                           td.innerText = elem; // Set the value as the text of the table cell
+                           tr.appendChild(td); // Append the table cell to the table row
+                        });
+                        table.appendChild(tr); // Append the table row to the table
+                     });
+                     container.appendChild(table) // Append the table to the container element
+                  }
+               </script>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="research-and-development">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                id="btn" onclick="battery_power_system_for_drones_and_robots()" cli
+                data-bs-toggle="collapse"
+                data-bs-target="#research-and-development-collapse"
+                aria-expanded="false"
+                aria-controls="research-and-development-collapse"
+              >
+              Battery Power System for Drones and Robots
+              </button>
+            </h2>
+            <div
+              id="research-and-development-collapse"
+              class="accordion-collapse collapse"
+              aria-labelledby="research-and-development"
+              data-bs-parent="#brln-services"
+            >
+            <div class="accordion-body" id="container">
+              <!-- <img src="assets/img/btr-manufacturing-1.png" alt="" class="recycling-and-environmental-services"> -->
+
+              <script>
+              
+                // Function to convert JSON data to HTML table
+                function battery_power_system_for_drones_and_robots() {
+                   
+
+                   const data_battery_power_system_for_drones_and_robots = [
+                    {
+'Chemistry':'Li-Ion NMC',
+'Voltage':'from 22.2V to 43.2V ',
+'Capcacity':'From 16000 mAH to As per Requirement '
+},
+];
+                   
+                   // Get the container element where the table will be inserted
+                   let container = document.getElementById("container");
+                   
+                   // Create the table element
+                   let table = document.createElement("table");
+                   
+                   // Get the keys (column names) of the first object in the JSON data
+                   let cols = Object.keys(data_battery_power_system_for_drones_and_robots[0]);
+                   
+                   // Create the header element
+                   let thead = document.createElement("thead");
+                   let tr = document.createElement("tr");
+                   
+                   // Loop through the column names and create header cells
+                   cols.forEach((item) => {
+                      let th = document.createElement("th");
+                      th.innerText = item; // Set the column name as the text of the header cell
+                      tr.appendChild(th); // Append the header cell to the header row
+                   });
+                   thead.appendChild(tr); // Append the header row to the header
+                   table.append(tr) // Append the header to the table
+                   
+                   // Loop through the JSON data and create table rows
+                   data_battery_power_system_for_drones_and_robots.forEach((item) => {
+                      let tr = document.createElement("tr");
+                      
+                      // Get the values of the current object in the JSON data
+                      let vals = Object.values(item);
+                      
+                      // Loop through the values and create table cells
+                      vals.forEach((elem) => {
+                         let td = document.createElement("td");
+                         td.innerText = elem; // Set the value as the text of the table cell
+                         tr.appendChild(td); // Append the table cell to the table row
+                      });
+                      table.appendChild(tr); // Append the table row to the table
+                   });
+                   container.appendChild(table) // Append the table to the container element
+                }
+             </script>
+            </div>
+             
+            </div>
+          </div>
+
+         
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="prototyping-and-testing">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#prototyping-and-testing-collapse"
+                aria-expanded="false"
+                aria-controls="prototyping-and-testing-collapse"
+              >
+              Prototyping and Testing
+              </button>
+            </h2>
+            <div
+              id="prototyping-and-testing-collapse"
+              class="accordion-collapse collapse"
+              aria-labelledby="prototyping-and-testing"
+              data-bs-parent="#brln-services"
+            >
+              <div class="accordion-body">
+                <img src="assets/img/testing.png" alt="" class="recycling-and-environmental-services">
+   
+    <p>
+      Prototyping:
+Prototyping involves creating a small-scale, functional version of the final lithium-ion battery design. This phase allows manufacturers to validate the design, materials, and manufacturing processes before committing to large-scale production. Key steps in the prototyping phase include:
+
+<b>Design Development: </b> Engineers and designers create a detailed blueprint of the battery, specifying components, materials, dimensions, and assembly processes.
+
+<b>Component Selection:</b> Choosing appropriate electrode materials, separators, electrolytes, and other components based on factors like performance, cost, and safety.
+
+<b>Electrode Fabrication:</b> Producing the anode and cathode electrodes using methods like slurry casting, coating, and calendaring.
+
+<b>Cell Assembly: </b>Assembling the prototype cells using the selected components, electrodes, and electrolytes.
+
+<b>Sealing and Encapsulation:</b> Ensuring the cells are properly sealed to prevent leakage and to maintain the integrity of the internal components.
+
+<b>Initial Testing: </b> Conducting basic tests on the prototype cells to assess their initial performance, capacity, and safety characteristics.
+
+<b>Testing:</b>
+Testing is a comprehensive phase that involves subjecting prototype lithium-ion cells to a range of tests to evaluate their performance, safety, and reliability. Some of the crucial tests include:
+
+<h5>Electrical Performance Tests:</h5>
+
+<b>Capacity Test:</b> Measures the amount of charge a battery can store and release.
+<b>Cycling Test:</b> Evaluates the battery's performance over multiple charge and discharge cycles to assess capacity retention and cycle life.
+<b>Rate Capability Test:</b> Determines how well the battery can deliver energy at different discharge rates.
+
+
+
+    </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="quality-control-and-assurance">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#quality-control-and-assurance-1"
+                aria-expanded="false"
+                aria-controls="quality-control-and-assurance-1"
+              >
+              Quality Control and Assurance
+              </button>
+            </h2>
+            <div
+              id="quality-control-and-assurance-1"
+              class="accordion-collapse collapse"
+              aria-labelledby="quality-control-and-assurance"
+              data-bs-parent="#brln-services"
+            >
+              <div class="accordion-body">
+                <img src="assets/img/q-a.png" alt="" class="recycling-and-environmental-services">
+                
+    
+                <p>Lithium-ion batteries are widely used in various applications, including consumer electronics, electric vehicles, and renewable energy storage. Given the potential risks associated with these batteries, maintaining high standards of quality control and assurance is essential.</p>
+               <p>
+                <b>Raw Material Inspection:</b>
+    Quality control begins with the inspection of raw materials. The quality and consistency of materials such as lithium salts, electrode materials (cathodes and anodes), electrolytes, separators, and current collectors are carefully evaluated before they are used in battery production.
+    
+    <b>Process Control:</b>
+    Manufacturing processes are closely monitored to ensure they adhere to strict quality standards. This includes electrode preparation, cell assembly, electrolyte filling, and sealing. Any deviations from established parameters can affect the battery's performance, safety, and longevity.
+    
+    <b>In-Process Testing:</b>
+    Various tests are conducted at different stages of production to identify potential issues early on. These tests might include electrode thickness measurement, electrolyte composition analysis, and checks for uniformity in electrode coatings.
+    
+    <b>Quality Testing:</b>
+    Completed battery cells undergo comprehensive quality testing to evaluate their performance and safety. Key tests include capacity measurement, cycle life testing, rate capability assessment, and thermal stability testing. These tests help ensure that the batteries meet the specified performance metrics and are safe for use.
+    
+    <b>Safety Testing:</b>
+    Safety is a paramount concern in lithium-ion battery manufacturing. Batteries are subjected to abuse testing, including puncture, crush, overcharge, and over-discharge tests, to evaluate their response to extreme conditions and prevent thermal runaway or other hazardous situations.
+               </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="recycling-and-environmental-services">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#recycling-and-environmental-services-collapse"
+                aria-expanded="false"
+                aria-controls="recycling-and-environmental-services-collapse"
+              >
+              Recycling and Environmental Services
+              </button>
+            </h2>
+            <div
+              id="recycling-and-environmental-services-collapse"
+              class="accordion-collapse collapse"
+              aria-labelledby="recycling-and-environmental-services"
+              data-bs-parent="#brln-services"
+            >
+              <div class="accordion-body">
+                <img src="assets/img/recycle.png" alt="" class="recycling-and-environmental-services">
+                
+                <p>
+                  
+    Lithium-ion battery recycling is crucial for reducing the environmental impact of these batteries. These batteries contain valuable materials such as lithium, cobalt, nickel, and other metals that can be recovered and reused in new batteries, reducing the need for mining raw materials. The recycling process typically involves several steps:
+    
+    <b>Collection and Sorting:</b> Used batteries are collected and sorted to separate different types and chemistries of batteries. This step is essential as different chemistries require different recycling approaches.
+    
+    <b>Discharge:</b> Batteries are discharged to make them safe for further processing. Lithium-ion batteries can still hold a significant amount of charge, which could be dangerous during recycling.
+    
+    <b>Dismantling:</b> Batteries are dismantled, and the components are separated. This can involve removing the casing, separating electrodes, and isolating other components.
+    
+    <b>Material Recovery:</b> The recovered components are processed to extract valuable materials. This can include the recovery of metals like lithium, cobalt, nickel, and more.
+                <p>
+                  It's essential to note that the scope and services offered by battery manufacturers can vary significantly depending on their size, specialization, and the specific types of batteries they produce.</p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <!-- <h2>Product</h2> -->
+        <p id="para">
+          <!-- Choosing a berlin Energy is a critical decision
+            that requires careful consideration. -->
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4 align-items-center features-item">
+          <div
+            class="col-lg-0 order-2 order-lg-1"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <!-- <h3>Expertise and Experience</h3>
+              <p>
+                Solar panel manufacturing is a complex and precise process that transforms raw materials into high-efficiency photovoltaic panels capable of harnessing sunlight and converting it into clean, renewable energy.
+                <ul id="btr-exp">
+                  <li>
+                    <i class="bi bi-check"></i>
+                    Silicon Ingot Production:
+                    - The journey begins with silicon, a versatile semiconductor material. Ingot production involves melting high-purity silicon and crystallizing it to form cylindrical ingots.
+                    - Techniques like the Czochralski method create single-crystal ingots that serve as the foundation for efficient solar cells.
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    Wafer Slicing:
+                    - The ingots are then sliced into wafer-thin discs using advanced wire saws. These wafers will become the base for individual solar cells.
+                    - Precision cutting ensures minimal material waste and optimal use of the silicon ingots.
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    Cell Processing:
+                    - Wafer surfaces undergo texturing processes that create microstructures to reduce reflection and enhance light absorption.
+                    - Anti-reflective coatings are applied to further improve light capture, while ion implantation introduces dopants to create electrical junctions.
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    Electrical Components:
+   - A junction box is attached to the back of the panel, housing connectors and wiring that facilitate the connection to external systems.
+   - Bypass diodes, as well as other safety and protection components, are integrated to ensure the panel's performance and longevity.
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    Quality Control and Testing:
+   - Each panel undergoes rigorous electrical testing to verify performance parameters such as voltage, current, and power output.
+   - Visual inspections ensure the absence of defects and imperfections in the encapsulation and lamination process.
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    Installation and Sustainable Energy Generation:
+   - Installed panels convert sunlight into direct current (DC) electricity. Inverters are used to convert DC into alternating current (AC) for use in homes, businesses, and the grid.
+   - The generated renewable energy helps reduce carbon emissions and dependence on fossil fuels, contributing to a greener planet.
+                  </li>
+
+                </ul>
+                
+                  
+                
+              </p> -->
+            <!-- <a href="#" class="btn btn-get-started">Get Started</a> -->
+          </div>
+          <div
+            class="col-lg-12 order-1 order-lg-2 d-flex align-items-center"
+            data-aos="zoom-out"
+            data-aos-delay="100"
+          >
+            <div class="image-stack">
+              <!-- <img
+                  src="assets/img/features-light-1.jpg"
+                  alt=""
+                  class="stack-front"
+                /> -->
+              <!-- <video
+                src="./assets/img/video/solar pannel.mp4"
+                style="height: auto"
+                autoplay="true"
+                loop="true"
+                muted="true"
+                class="stack-back"
+              ></video> -->
+              <!-- <img
+                src="assets/img/product/solar-panel.jpg"
+                alt=""
+                class="stack-front"
+              /> -->
+            </div>
+          </div>
+          <div class="row"></div>
+        </div>
+
+        <!-- <div
+            class="row gy-4 align-items-stretch justify-content-between features-item"
+          >
+            <div
+              class="col-lg-6 d-flex align-items-center features-img-bg"
+              data-aos="zoom-out"
+            >
+              <img
+                src="assets/img/features-light-3.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div
+              class="col-lg-5 d-flex justify-content-center flex-column"
+              data-aos="fade-up"
+            >
+              <h3>Customized Solutions</h3>
+              <p class="p-pro">
+                We believe that one size doesn't fit all when it comes to
+                security. We work closely with each client to tailor our
+                services to their specific needs and requirements. Our
+                personalized approach ensures that you receive the level of
+                security that is right for you.
+              </p>
+              <ul class="p-pro">
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span
+                    >Comprehensive Risk Assessment: We begin by conducting a
+                    thorough assessment of your unique security needs. Our
+                    experts analyze your property, assets, operations, and
+                    potential vulnerabilities to develop a detailed
+                    understanding of your specific security challenges.</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check"></i
+                  ><span>
+                    Personalized Security Plans: Based on the assessment, we
+                    create a customized security plan that addresses your
+                    specific concerns and requirements.</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span
+                    >Flexibility and Adaptability: Our approach is adaptable to
+                    changes and evolving threats. We understand that security
+                    needs can change over time, and we are ready to adjust our
+                    strategies to accommodate new challenges or
+                    circumstances.</span
+                  >.
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span
+                    ><span>Event-Specific Security:</span> For events or
+                    temporary situations, we design security plans that cater to
+                    the unique needs of the occasion. Whether it's a corporate
+                    gathering, concert, or trade show, we ensure that your event
+                    runs smoothly and securely.</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check"></i>
+                  <span>
+                    <span>Emergency Response Protocols:</span>
+                    Our customized solutions include detailed emergency response
+                    protocols that are tailored to your property layout and
+                    potential threats. This ensures that our team knows exactly
+                    how to respond effectively in critical situations.
+                  </span>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-get-started align-self-start"
+                >Get Started</a
+              >
+            </div>
+          </div> -->
+
+        <section>
+          <div class="section-title" data-aos="fade-up">
+            <h2>Products</h2>
+            <p id="para">
+              Choosing a berlin Energy is a critical decision that requires
+              careful consideration.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div
+                class="card card-body-pro"
+                style="width: 26rem; background-color: #e2e0dd"
+              >
+                <img
+                  class="card-img-top"
+                  src="./assets/img/product/product-9.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Solar Applications</h5>
+                  <p class="card-text p-pro">
+                    Batteries play a crucial role in solar energy systems,
+                    allowing you to store excess energy generated by your solar
+                    panels for use during times when the sun isn't shining (such
+                    as at night or on cloudy days). This helps make solar energy
+                    a more reliable and consistent source of power.
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="card card-body-pro"
+                style="width: 26rem; height: 488px; background-color: #e2e0dd"
+              >
+                <img
+                  class="card-img-top"
+                  src="./assets/img/product/product-1.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Drone and Robotics Application</h5>
+                  <p class="card-text p-pro">
+                    Choosing the right battery for drone and robotics
+                    applications is crucial to ensure optimal performance,
+                    flight time, and safety
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary" style="margin-top: 19%;">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="card card-body-pro"
+                style="width: 26rem; background-color: #e2e0dd"
+              >
+                <img
+                  class="card-img-top"
+                  src="./assets/img/product/product-10.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Agricultural Applications</h5>
+                  <p class="card-text p-pro">
+                    Batteries play a crucial role in modern agricultural
+                    applications, powering a wide range of equipment and
+                    systems. When selecting a battery for agricultural use,
+                    several factors need to be considered to ensure optimal
+                    performance and reliability.
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <!-- <div class="row">
+            <div class="col-lg-4">
+              <div
+                class="card card-body-pro"
+                style="width: 26rem; height: 610px; background-color: #e2e0dd"
+              >
+                <img
+                  class="card-img-top"
+                  src="./assets/img/product/product-3.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Industrial Applications</h5>
+                  <p class="card-text p-pro">
+                    Batteries play a crucial role in various industrial
+                    applications, providing power backup, energy storage, and
+                    mobile power solutions. Lithium-ion batteries offer high
+                    energy density, longer cycle life, and lighter weight
+                    compared to lead-acid batteries. They are commonly used in
+                    industrial applications such as renewable energy storage,
+                    electric forklifts, robotic systems, and portable equipment.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="card card-body-pro"
+                style="width: 26rem; height: 610px; background-color: #e2e0dd"
+              >
+                <img
+                  class="card-img-top"
+                  src="./assets/img/product/product-7.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Medical Devices</h5>
+                  <p class="card-text p-pro">
+                    Batteries used in medical devices are critical components
+                    that ensure the reliable operation of various healthcare
+                    equipment. Medical device batteries must meet stringent
+                    requirements for safety, reliability, and performance, as
+                    they are often used in life-saving and patient care
+                    applications.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="card card-body-pro"
+                style="width: 26rem; height: 610px; background-color: #e2e0dd"
+              >
+                <img
+                  class="card-img-top"
+                  src="./assets/img/product/product-6.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Electric Tools Application</h5>
+                  <p class="card-text p-pro">
+                    Electric tools, such as cordless drills, saws, and other
+                    portable equipment, rely on batteries to provide the
+                    necessary power for operation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </section>
+      </div>
+    </section>
+
+ 
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <div style="height: 100px">
+              <img
+                src="assets/img/berlin.png"
+                alt=""
+                style="
+                  height: 90px;
+                  margin-left: 20%;
+                  background-color: #e2e0dd;
+                "
+              />
+            </div>
+            <a href="index.html" class="logo d-flex align-items-center mt-3">
+              <span>Berlin Energy Pvt. Ltd.</span>
+            </a>
+            <p>
+              Berline Energy Pvt. Ltd. manufactured a variety of batteries,
+              including lithium-ion batteries and others. The corporation
+              frequently employs qualified technicians, engineers, and
+              researchers and manages complex manufacturing facilities outfitted
+              with specialized technology.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="index.html#about">About us</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Battery Manufacturing</a></li>
+              <li><a href="#">Research and Development</a></li>
+              <li><a href="#">Battery Design and Engineering</a></li>
+              <li><a href="#">Prototyping and Testing</a></li>
+              <li><a href="#">Quality Control and Assurance</a></li>
+              <li><a href="#">Recycling and Environmental Services</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-lg-2 col-md-12 footer-contact text-center text-md-start"
+          >
+            <h4>Contact Us</h4>
+            <p></p>
+            <p>Latur, Maharashtra, India</p>
+
+            <p class="mt-4">
+              <strong>Phone:</strong> <span>+91 9876543210</span>
+            </p>
+            <p><strong>Email:</strong> <span>info@berlinenergy.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          &copy; <span>Copyright</span>
+          <strong class="px-1">Berlin Energy Pvt. Ltd.</strong>
+          <span>All Rights Reserved</span>
+        </p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by
+          <a href="https://bootstrapmade.com/">Berlin Energy Pvt. Ltd.</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Scroll Top Button -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
