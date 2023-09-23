@@ -21,6 +21,7 @@
   --color-box-background-rgb: 255, 255, 255;
   --color-inverse: #ffffff;
   --color-inverse-rgb: 255, 255, 255;
+  --footer-color: #e1dfdc;
 }
 
 /* Nav Menu Colors */
@@ -279,7 +280,6 @@ section {
   .card-body-pro {
     /* width:22rem; */
     margin-bottom: 20px;
-    
   }
 }
 
@@ -748,7 +748,8 @@ section {
   --color-background: #f4f4f4;
   --color-box-background: #eaeaea;
   color: var(--color-default);
-  background-color: var(--color-background);
+  /* background-color: var(--color-background); */
+  background-color: var(--footer-color);
   font-size: 14px;
   padding-bottom: 50px;
 }
@@ -850,7 +851,8 @@ section {
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: var(--color-box-background);
+  /* background-color: var(--color-box-background); */
+  background-color: var(--footer-color);
 }
 
 .footer .copyright p {
