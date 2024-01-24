@@ -1,0 +1,43 @@
+{
+  "api": {
+    "enquiry": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "berlinenergy7f164784"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "berlinenergy7f164784": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_berlinenergy7f164784_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "berlinenergy7f164784"
+        }
+      ]
+    },
+    "AMPLIFY_function_berlinenergy7f164784_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "berlinenergy7f164784"
+        }
+      ]
+    }
+  }
+}

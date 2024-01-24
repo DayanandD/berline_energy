@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-berlinenergy-dev-210756-authRole",
+      "UnauthRoleArn": "arn:aws:iam::142720920546:role/amplify-berlinenergy-dev-210756-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::142720920546:role/amplify-berlinenergy-dev-210756-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-berlinenergy-dev-210756-deployment",
+      "UnauthRoleName": "amplify-berlinenergy-dev-210756-unauthRole",
+      "StackName": "amplify-berlinenergy-dev-210756",
+      "StackId": "arn:aws:cloudformation:us-east-1:142720920546:stack/amplify-berlinenergy-dev-210756/8d9d0010-bace-11ee-982d-12ac542ddf61",
+      "AmplifyAppId": "d3s0dakj6jl030"
+    },
+    "categories": {
+      "function": {
+        "berlinenergy7f164784": {
+          "deploymentBucketName": "amplify-berlinenergy-dev-210756-deployment",
+          "s3Key": "amplify-builds/berlinenergy7f164784-7044616d34304f765674-build.zip"
+        }
+      },
+      "api": {
+        "enquiry": {}
+      }
+    }
+  }
+}
